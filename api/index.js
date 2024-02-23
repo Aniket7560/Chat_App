@@ -20,7 +20,7 @@ const bcryptSalt = bcrypt.genSaltSync(10);
 
 const app = express();
 
-mongoose.connect(process.env.MONGO_URL);
+mongoose.connect(mongodb+srv://mernchat:pSbvB6xSRoqQIPdn@cluster0.mdtqcg6.mongodb.net/test?retryWrites=true&w=majority);
 
 app.use(cors({
     credentials: true,
