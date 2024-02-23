@@ -28,10 +28,10 @@ app.use(cors({
     methods: ["POST", "GET"],
 }));
 
-// app.use('/uploads', express.static(__dirname+'/uploads'));
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
-// app.use(cookieParser());
+app.use('/uploads', express.static(__dirname+'/uploads'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
 
 app.get('/test', (req, res) => {
     res.send("Hello world!");
