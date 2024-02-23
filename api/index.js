@@ -24,7 +24,7 @@ mongoose.connect(mongodb+srv://mernchat:pSbvB6xSRoqQIPdn@cluster0.mdtqcg6.mongod
 
 app.use(cors({
     credentials: true,
-    origin: ["https://deploy-mern-1whq.vercel.app"],
+    origin: ["https://chat-app-front-lac.vercel.app/"],
     methods: ["POST", "GET"],
 }));
 
